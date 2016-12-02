@@ -11,7 +11,7 @@ header {
     align-items: center;
     transition: all 0.5s;
     height: 50px;
-    background-color: rgba(255,255,255,0.75);
+    background-color: rgba(255,255,255,0.5);
     position: fixed;
     width: 100%;
 }
@@ -22,23 +22,30 @@ nav {
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: 100%;
 }
 
 header:hover {
-    background-color: rgba(255,255,255,1);
+    /*background-color: rgba(255,255,255,1);*/
 }
 
 .navtext {
-    margin-right: 15px;
-	margin-left: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
     font-size: 34px;
 	transition: all 0.5s;
+    width: 20%;
+    height: 100%;
+    text-align: center;
 }
 
 .navtext:hover {
-	padding-left: 30px;
-	padding-right: 30px;
+/*	padding-left: 30px;
+	padding-right: 30px;*/
+    background-color: rgba(255,255,255,0.75);
 }
 
 #section1 {
@@ -97,6 +104,7 @@ header:hover {
     width: 50%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     text-align: justify;
     font-size: 21px;
     margin: 0;
@@ -108,6 +116,10 @@ header:hover {
 
 #article2image {
     margin-left: 30px;
+    filter: drop-shadow(2px 2px 5px black);
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
 }
 
 .rubrik {
