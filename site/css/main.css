@@ -11,9 +11,10 @@ header {
     align-items: center;
     transition: all 0.5s;
     height: 50px;
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(255,255,255,0.9);
     position: fixed;
     width: 100%;
+    z-index: 1000;
 }
 
 nav {
@@ -23,10 +24,6 @@ nav {
     align-items: center;
     width: 100%;
     height: 100%;
-}
-
-header:hover {
-    /*background-color: rgba(255,255,255,1);*/
 }
 
 .navtext {
@@ -43,7 +40,7 @@ header:hover {
 }
 
 .navtext:hover {
-    background-color: rgba(255,255,255,0.75);
+    background-color: rgba(0,0,0,0.1);
 }
 
 .rubrik {
@@ -51,6 +48,7 @@ header:hover {
     text-align: center;
     text-shadow: 2px 2px 5px black;
     color: white;
+    margin: 20px 0 20px 0;
 }
 
 #section1 {
@@ -110,11 +108,12 @@ header:hover {
     font-size: 21px;
     margin: 0;
     color: white;
+    text-shadow: 1px 1px 1px black;
 }
 
-#article2image {
+.articleimage {
     margin-left: 30px;
-    filter: drop-shadow(2px 2px 5px black);
+    filter: drop-shadow(2px 3px 3px black);
     display: flex;
     flex-direction: column;
     justify-content:center;
@@ -130,9 +129,30 @@ header:hover {
     width: 100%;
 }
 
-iframe {
+#section4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #1abc9c;
+    background-size: cover;
+    width: 100%;
+}
+
+#video {
     width: 800px;
-    height: 475px;
+    height: 450px;
+    filter: drop-shadow(2px 3px 3px black);
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    font-size: 1.7em;
+    text-align: center;
+    text-shadow: 0 0 0.5px black;
 }
 
 @media screen and (max-width: 1200px) {
